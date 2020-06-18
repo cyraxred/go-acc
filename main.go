@@ -1,6 +1,6 @@
 package main
 
-import "github.com/ory/go-acc/cmd"
+import "github.com/cyraxred/go-acc/cmd"
 
 func main() {
 	cmd.Execute()
