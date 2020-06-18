@@ -128,8 +128,8 @@ GO_TEST_BINARY="gotest"
 					"-coverprofile=" + files[k],
 					"-coverpkg=" + strings.Join(packages, ","),
 				},
-				passthrough...),
-				pkg)
+				pkg),
+				passthrough...)
 			c = exec.Command(gt[0], ca...)
 
 			stderr, err := c.StderrPipe()
