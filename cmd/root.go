@@ -131,9 +131,6 @@ GO_TEST_BINARY="gotest"
 				pkg),
 				passthrough...)
 
-			println("============================================")
-			fmt.Println(ca)
-
 			c = exec.Command(gt[0], ca...)
 
 			stderr, err := c.StderrPipe()
